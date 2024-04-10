@@ -61,5 +61,4 @@ begin
       Ts(I).Start(Steps_Array(I), Sequence_Array(I), Initial_Value_Array(I));
    end loop;
 
-   null;
 end Main;
