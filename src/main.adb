@@ -31,9 +31,9 @@ procedure Main is
    end break_thread;
 
    task body main_thread is
-      Initial_Value : Integer := 0;
-      Step : Integer := 0;
-      Sequence_Number : Integer := 1;
+      Initial_Value : Integer;
+      Step : Integer;
+      Sequence_Number : Integer;
       Number_Sequence_Elements : Integer := 0;
    begin
       accept Start(Step_Value: Integer; Start_Sequence_Number: Integer; Start_Initial_Value: Integer) do
@@ -61,5 +61,4 @@ begin
       Ts(I).Start(Steps_Array(I), Sequence_Array(I), Initial_Value_Array(I));
    end loop;
 
-   null;
 end Main;
